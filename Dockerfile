@@ -12,8 +12,8 @@ WORKDIR /app
 
 EXPOSE 8080
 
+COPY target/spring-rest.jar spring-rest.jar
 CMD ["-jar", "spring-rest.jar"]
 
 ENTRYPOINT ["dumb-init", "java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Xmx256m", "-Djava.security.egd=file:/dev/urandom"]
 
-COPY target/spring-rest.jar spring-rest.jar
