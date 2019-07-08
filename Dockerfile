@@ -16,4 +16,4 @@ CMD ["-jar", "spring-rest.jar"]
 
 ENTRYPOINT ["dumb-init", "java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Xmx256m", "-Djava.security.egd=file:/dev/urandom"]
 
-COPY target/*.jar spring-rest.jar
+COPY target/spring-rest.jar spring-rest.jar
