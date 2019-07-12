@@ -11,7 +11,7 @@ pipeline {
 
         stage("checkout") {
             steps {
-                git url: "https://github.com/{{gi.goalEvent.repo.owner}}/{{gi.goalEvent.repo.name}}.git"
+                git url: "https://github.com/madube-bnc/spring-rest"
             }
         }
 
