@@ -10,6 +10,7 @@ pipeline {
     stages {
 
         stage("checkout") {
+            sh ("env | sort")
             steps {
                 git url: "https://github.com/madube-bnc/spring-rest"
             }
