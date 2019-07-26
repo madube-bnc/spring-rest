@@ -1,5 +1,4 @@
 pipeline {
-
     agent {
         docker {
             image "maven:3.6.1-jdk-8-slim"
@@ -8,7 +7,6 @@ pipeline {
     }
 
     stages {
-
         stage("checkout") {
             steps {
                 sh ("env | sort")
