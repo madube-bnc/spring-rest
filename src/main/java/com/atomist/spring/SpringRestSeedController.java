@@ -14,6 +14,6 @@ class SpringRestSeedController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello world!!!!!! AIza12423asdfasdfasdfafdasdfasdfasdfasd";
+        return "Hello world!!!!!!! AIza12423asdfasdfasdfafdasdfasdfasdfasd";
     }
 }
